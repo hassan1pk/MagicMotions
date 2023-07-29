@@ -1,12 +1,18 @@
 import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Viewers from "./Viewers";
+import Recommends from "./Recommends";
+import Latest from "./Latest";
+import Exclusive from "./Exclusive";
 
 const Home = (props) => {
   return (
     <Container>
       <ImgSlider />
       <Viewers />
+      <Recommends />
+      <Latest />
+      <Exclusive />
     </Container>
   );
 };
