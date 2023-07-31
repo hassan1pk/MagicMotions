@@ -5,7 +5,6 @@ import Recommends from "./Recommends";
 import Latest from "./Latest";
 import Exclusive from "./Exclusive";
 import Trending from "./Trending";
-//import BulkAddData from "./BulkAddData";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import db from "../firebase";
@@ -103,7 +102,6 @@ const Home = (props) => {
       <Latest />
       <Exclusive />
       <Trending />
-      {/*<BulkAddData />*/}
     </Container>
   );
 };

@@ -19,14 +19,23 @@ const Header = (props) => {
   const userPhoto = useSelector(selectUserPhoto);
 
   useEffect(() => {
-    auth.onAuthStateChanged(async (user) => {
+    const unsubscribe = auth.onAuthStateChanged(async (user) => {
       if (user) {
         setUser(user);
-        navigate("/home");
+
+        if (window.location.pathname === "/") {
+          navigate("/home");
+        }
+      } else {
+        navigate("/");
       }
-      console.log("Auth status changed");
+      //console.log("Auth status changed ", user);
     });
-  }, [userName]);
+
+    return () => {
+      unsubscribe();
+    };
+  }, []);
 
   const handleAuth = () => {
     if (!userName) {
