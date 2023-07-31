@@ -24,6 +24,7 @@ const Header = (props) => {
         setUser(user);
         navigate("/home");
       }
+      console.log("Auth status changed");
     });
   }, [userName]);
 

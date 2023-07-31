@@ -1,12 +1,25 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { selectRecommend } from "../features/movie/movieSlice";
 
 const Recommends = (props) => {
+  const movies = useSelector(selectRecommend);
   return (
     <Container>
       <h4>Recommended for You</h4>
       <Content>
-        <Wrap>
+        {movies &&
+          movies.map((movie, key) => {
+            return (
+              <Wrap key={key}>
+                <Link to={"/detail/" + movie.id}>
+                  <img src={movie.cardImg} alt={movie.title} />
+                </Link>
+              </Wrap>
+            );
+          })}
+        {/*}  <Wrap>
           <Link to="/">
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjks1ivZvQlj3l9NAZrKUjqPDmrym9mzOe9FpCZfG_-6GWjvDdCi74zYY6M-K92mpZ4QjxVYYafoFOBmgLUH8nxO82iQSvA8FPgGmzgwBWwdHJkffXzvuq4JBI2UWUZovJe71YbWvsxPf2pTHO23vOc5IPQ1uiG_Jl25PJh-zu9Gp9qMIRwEyjQV9xCnYlw/s600/Barbie%20Poster%201.jpg"
@@ -37,7 +50,7 @@ const Recommends = (props) => {
               alt=""
             />
           </Link>
-        </Wrap>
+  </Wrap>*/}
       </Content>
     </Container>
   );

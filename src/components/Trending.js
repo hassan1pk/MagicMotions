@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectExclusive } from "../features/movie/movieSlice";
+import { selectTrending } from "../features/movie/movieSlice";
 
-const Exclusive = (props) => {
-  const movies = useSelector(selectExclusive);
+const Trending = (props) => {
+  const movies = useSelector(selectTrending);
   return (
     <Container>
-      <h4>Exclusive to Magic Motions</h4>
+      <h4>Trending</h4>
       <Content>
         {movies &&
           movies.map((movie, key) => {
@@ -71,4 +71,4 @@ const Wrap = styled.div`
   }
 `;
 
-export default Exclusive;
+export default Trending;
