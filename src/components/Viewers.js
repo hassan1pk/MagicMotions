@@ -4,19 +4,19 @@ const Viewers = (props) => {
   return (
     <Container>
       <Wrap>
-        <img src="/images/Viewers/viewers-disney.png" alt="" />
+        <img src="/Images/Viewers/viewers-disney.png" alt="" />
         <video autoPlay={true} loop={true} playsInline={true}>
           <source src="/Videos/1564674844-disney.mp4" type="video/mp4" />
         </video>
       </Wrap>
       <Wrap>
-        <img src="/images/Viewers/viewers-marvel.png" alt="" />
+        <img src="/Images/Viewers/viewers-marvel.png" alt="" />
         <video autoPlay={true} loop={true} playsInline={true}>
           <source src="/Videos/1564676115-marvel.mp4" type="video/mp4" />
         </video>
       </Wrap>
       <Wrap>
-        <img src="/images/Viewers/viewers-national.png" alt="" />
+        <img src="/Images/Viewers/viewers-national.png" alt="" />
         <video autoPlay={true} loop={true} playsInline={true}>
           <source
             src="/Videos/1564676296-national-geographic.mp4"
@@ -25,13 +25,13 @@ const Viewers = (props) => {
         </video>
       </Wrap>
       <Wrap>
-        <img src="/images/Viewers/viewers-pixar.png" alt="" />
+        <img src="/Images/Viewers/viewers-pixar.png" alt="" />
         <video autoPlay={true} loop={true} playsInline={true}>
           <source src="/Videos/1564676714-pixar.mp4" type="video/mp4" />
         </video>
       </Wrap>
       <Wrap>
-        <img src="/images/Viewers/viewers-starwars.png" alt="" />
+        <img src="/Images/Viewers/viewers-starwars.png" alt="" />
         <video autoPlay={true} loop={true} playsInline={true}>
           <source src="/Videos/1608229455-star-wars.mp4" type="video/mp4" />
         </video>

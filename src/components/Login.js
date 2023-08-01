@@ -5,14 +5,14 @@ const Login = (props) => {
     <Container>
       <Content>
         <CTA>
-          <CTALogoOne src="/images/cta-logo-one.svg" alt="" />
+          <CTALogoOne src="/Images/cta-logo-one.svg" alt="" />
           <SignUp>GET ALL THERE</SignUp>
           <Description>
             Get 4K Access to Oppenheimer and Barbie for an additional fee with
             Magic Motions Premium subscription. Avail 20% discount if you
             subscribe before 31-Aug-2023.
           </Description>
-          <CTALogoTwo src="/images/cta-logo-two.png" alt="" />
+          <CTALogoTwo src="/Images/cta-logo-two.png" alt="" />
         </CTA>
         <BgImage />
       </Content>
@@ -47,7 +47,7 @@ const BgImage = styled.div`
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/images/login-background.jpg");
+  background-image: url("/Images/login-background.jpg");
   position: absolute;
   top: 0;
   right: 0;
